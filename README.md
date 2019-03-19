@@ -1,8 +1,8 @@
 # hello-world
 This is a test for me, Sam, and MC to collaborate on a repository and try out versioning
-Edit, edit, edit
-push it
-pull it
+Edit, copy, paste
+push it, cool
+pull it, yes
 committed
 my computer is dying
 catastrophic failure
