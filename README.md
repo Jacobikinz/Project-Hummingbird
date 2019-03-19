@@ -4,5 +4,4 @@ Edit, copy, paste
 push it, cool
 pull it, yes
 committed
-my computer is dying
-catastrophic failure
+my computer is alive failure
