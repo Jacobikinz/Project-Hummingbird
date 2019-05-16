@@ -9,6 +9,8 @@ Original file is located at
 # RSS Live Feed to Pandas
 """
 
+#!pip install feedparser
+
 from sklearn import cluster, datasets
 import pandas as pd
 import matplotlib.pyplot as plt
