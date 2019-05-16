@@ -9,7 +9,7 @@ Original file is located at
 # RSS Live Feed to Pandas
 """
 
-#!pip install feedparser
+!pip install feedparser
 
 from sklearn import cluster, datasets
 import pandas as pd
