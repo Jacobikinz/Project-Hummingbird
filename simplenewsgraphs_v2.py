@@ -9,7 +9,7 @@ Original file is located at
 # RSS Live Feed to Pandas
 """
 
-pip install feedparser
+!pip install feedparser
 
 from sklearn import cluster, datasets
 import pandas as pd
@@ -85,6 +85,8 @@ numericalHeadline = sentiment.iloc[:,0]
 time = headlines.iloc[:,-2]
 
 headlines
+
+headlines
 headlines.to_csv('headliners.csv')
 plt.scatter(time, numericalHeadline)
 
@@ -157,10 +159,17 @@ main()
 cd /content/
 
 from pandas.io.json import json_normalize
+import datetime
 
 #def dataToPandas(ticker, date):
-  
-with open('2019-05-09/AAPL_dann') as f:
+
+today = datetime.date.today()  
+todayday = today.day
+
+filenamer = "2019-05-%s/AAPL_dann" % todayday
+
+
+with open(filenamer) as f:
 	 parseData_raw = json.load(f)
 
 for key in parseData_raw:
@@ -174,6 +183,10 @@ stockDataCompany = pd.DataFrame(parseData_raw).transpose()
 
 stockDataCompany = stockDataCompany.reset_index()
 stockDataCompany['openToClose'] = stockDataCompany['open']-stockDataCompany['close']
+
+headlines
+
+stockDataCompany
 
 #stockDataCompany['index'].replace(regex=True,inplace=True,to_replace=r'-',value=r'')
 #stockDataCompany['index'].replace(regex=True,inplace=True,to_replace=r'\:',value=r'')
@@ -197,11 +210,9 @@ print (headlines.iloc[0])
 #print (headlines)
 headlines[0:10]["stringTime"]
 
-stockDataCompany[0:10]["index"]
 
-headlines
 
-data = pd.concat([sentiment, stockDataCompany], sort=True, axis=1)
+data = pd.concat([headlines, stockDataCompany], sort=True, axis=1)
 
 data = pd.DataFrame.dropna(data)
 data
