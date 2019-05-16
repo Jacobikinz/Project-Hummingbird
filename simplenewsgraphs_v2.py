@@ -22,8 +22,6 @@ import random
 
 """**Creating RSS news list**"""
 
-import feedparser
-
 #news sources to import fromt 
 newsurls = {
     'apnews':           'http://hosted2.ap.org/atom/APDEFAULT/3d281c11a96b4ad082fe88aa0db04305',
