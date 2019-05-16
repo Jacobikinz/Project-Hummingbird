@@ -156,8 +156,6 @@ def main():
 
 main()
 
-cd /content/
-
 from pandas.io.json import json_normalize
 import datetime
 
