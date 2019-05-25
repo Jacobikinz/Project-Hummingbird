@@ -1,2 +1,2 @@
 # 4th-Quarter-Project
-TBD
+We analyzing stocks
